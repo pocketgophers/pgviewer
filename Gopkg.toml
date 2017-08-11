@@ -1,0 +1,36 @@
+## Dependencies used in pocketgophers.com production are
+## constrained to be the same here.
+
+[[constraint]]
+  name = "github.com/gobuffalo/packr"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/gorilla/websocket"
+  version = "1.2.0"
+
+## same as pocketgophers.com
+[[constraint]]
+  name = "github.com/naoina/go-stringutil"
+  version = "=0.1.0"
+
+## same as pocketgophers.com
+[[constraint]]
+  name = "github.com/naoina/toml"
+  version = "=0.1.0"
+
+[[constraint]]
+  name = "github.com/pkg/errors"
+  version = "0.8.0"
+
+[[constraint]]
+  name = "github.com/rjeczalik/notify"
+  branch = "master"
+
+[[constraint]]
+  name = "github.com/spf13/hugo"
+  version = "0.26.0"
+
+[[constraint]]
+  name = "golang.org/x/sys"
+  branch = "master"

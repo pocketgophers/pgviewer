@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="go-import" content="pocketgophers.com{{.Path}} git https://github.com/pocketgophers{{.Path}}">
+
+<meta property="og:title" content="{{.Info.Title}}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pocketgophers.com{{.Path}}" />
+<meta property="og:image" content="https://pocketgophers.com/pocketgophers.svg" />
+
+<!-- livereload -->
+<script>document.write('<script src="/livereload.js?port=' 
++ (location.port || 80)
++'"></'
++ 'script>')</script>
+
+
+<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" -->
+
+<title>{{.Info.TitleText}} - Pocket Gophers</title>
+</head>
+<body>
+
+<header>
+<a href="/">{{template "logo"}}</a>
+<h1>{{.Info.Title}}</h1>
+{{.Version}}
+</header>
+
+<article>
+{{.Content}}	
+</article>
+
+<footer>
+<a href="/">See All Posts &gt;&gt;</a>
+<hr/>
+{{template "cta-email"}}	
+</footer>
+
+<link rel="stylesheet" type="text/css" href="/site.css" />
+</body>
+</html>
