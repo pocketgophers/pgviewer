@@ -41,11 +41,6 @@ blockquote cite::before {
 	content: "– ";
 }
 
-/*p > code {
-	background: #cecece;
-	border-radius: 5pt;
-	padding: 0.2em;
-}*/
 pre {
 	background: #cecece;
 	border-radius: 5pt;
@@ -61,22 +56,6 @@ code {
 header {
 	margin-bottom: 2em;
 	text-align: center;
-}
-
-footer {
-	background-color: #8efe8e;
-	border-radius: 5pt;
-	padding: 0.5em;
-	text-align: center;
-}
-footer form {
-	font-size: 150%;
-	line-height: 1.5;
-}
-footer p.header {
-	font-size: 2em;
-	font-weight: bold;
-	margin: 0;
 }
 
 
@@ -112,6 +91,15 @@ img {
 	padding: 0.5em;
 	text-align: center;
 }
+.cta form {
+	font-size: 150%;
+	line-height: 1.5;
+}
+.cta p.header {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0;
+}
 
 mark {
 	background-color: #8efe8e;
@@ -127,6 +115,10 @@ a:visited {
 
 fieldset {
 	border-color: #cecece;
+}
+
+nav {
+	margin-bottom: 1em;
 }
 
 /*
