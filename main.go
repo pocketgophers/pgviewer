@@ -10,8 +10,10 @@ import (
 	"log"
 	"net/http"
 	"path/filepath"
+	"reflect"
 
 	"github.com/gobuffalo/packr"
+	"github.com/naoina/toml"
 	"github.com/rjeczalik/notify"
 	"github.com/spf13/hugo/livereload"
 )
@@ -30,6 +32,11 @@ func main() {
 	assets := packr.NewBox("./pocketgophers")
 
 	livereloader()
+
+	// setup TOML package to ignore unknown fields
+	toml.DefaultConfig.MissingField = func(typ reflect.Type, key string) error {
+		return nil
+	}
 
 	tmpl, err := template.New("post.html").Parse(assets.String("templates/post.html"))
 	if err != nil {

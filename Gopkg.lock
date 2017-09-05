@@ -22,8 +22,8 @@
 [[projects]]
   name = "github.com/naoina/toml"
   packages = [".","ast"]
-  revision = "751171607256bb66e64c9f0220c00662420c38e9"
-  version = "v0.1.0"
+  revision = "e6f5723bf2a66af014955e0888881314cf294129"
+  version = "v0.1.1"
 
 [[projects]]
   name = "github.com/pkg/errors"
@@ -52,6 +52,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "86cb1f4ddd8ada959e7b99da3ec1b13566cac14bf886422d4df51bfeda1ac6b0"
+  inputs-digest = "b8a218cfd3f55d74c4c40e8f04c5333f04741acc0ad305dacfdaab5ee6b6ac70"
   solver-name = "gps-cdcl"
   solver-version = 1
