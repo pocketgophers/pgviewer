@@ -1,0 +1,264 @@
+html {
+	font-size: 17px;
+	font-family: "Alegreya", serif;
+
+	line-height: 1.4;
+}
+
+pre, code {
+	/*63 chars wide*/
+	font-family: "Inconsolata", monospace;
+}
+
+body {
+	background: #fefefe;
+	color: #0a0a0a;
+
+	max-width: 32em;
+	margin: auto;
+
+	/*border: 1px solid #575757;*/
+}
+
+header {
+	margin-bottom: 1em;
+	text-align: center;
+}
+header h1 {
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+pre {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 1.2;
+	tab-size: 4;
+	white-space: pre-wrap;
+}
+
+a:link {
+	color: #0a0a67;
+}
+a:visited {
+	color: #0a0a0a;
+}
+a:hover {}
+a:active{}
+
+
+h1, h2 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 0em;
+
+	break-after: avoid;
+}
+
+
+/*
+	figure
+*/
+
+figure {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #cecece;
+}
+figure * {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+figcaption {
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	text-align: center;
+	color: #575757;
+
+	break-after: avoid;
+}
+
+/*
+	mark
+*/
+
+mark {
+	background-color: #8efe8e;
+	color: #0a0a0a;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+/*
+	call to action
+*/
+
+.cta {
+	background-color: #8efe8e;
+	border-radius: 5px;
+	padding: 12px;
+}
+.cta form {
+	text-align: center;
+	font-size: 1.3em;
+	width: 100%;
+}
+.cta p.header {
+	font-size: 2em;
+	margin: 0;
+	text-align: center;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+nav {
+	margin-bottom: 1em;
+}
+
+/*
+	cover (book cover image: archive and pitch)
+*/
+
+.cover {
+	max-width: 49%;
+	margin-right: 1%;
+	border: solid 1px;
+}
+
+/*
+	table of contents (archive.html and book)
+*/
+
+.toc {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/*
+	blockquote
+*/
+
+blockquote {
+	border-left: 5px solid #cecece;
+	margin: 1em 0;
+	padding-left:1.5em;
+}
+
+blockquote cite::before {
+	content: "– ";
+}
+
+/*
+	package surveys
+*/
+
+h2.survey {
+	padding-top: 1.5em;
+	margin-bottom: 0;
+	text-align: center;
+}
+h2.survey:first-of-type {
+	padding-top: 0;
+}
+div.survey {
+	text-align: center
+}
+
+
+/*
+	screen vs print
+*/
+
+@media screen {
+	header {
+		margin-top: 1em;
+	}
+}
+
+
+@media print {
+	@page {
+		/*size: 396pt 596pt;*/
+		margin: 36pt;
+
+		@bottom-center {
+			content: "– " counter(page) " –";
+		}
+		@top-center {
+			content: string(chapter);
+		}
+	}
+
+	@page chapter {
+		@top-center {
+			content: none;
+		}
+	}
+
+	html {
+		font-size: 10pt;
+	}
+
+	h1 {
+		padding-top: 0;
+		margin-top: 0;
+
+		string-set: chapter content();
+		page: chapter;
+	}
+}
+
+/*
+light
+#fefefe white
+#fe8e8e red
+#8efe8e green
+#8e8efe blue
+#cecece grey
+
+dark
+#0a0a0a black
+#670a0a red
+#0a670a green
+#0a0a67 blue
+#575757 grey
+*/
